@@ -12,7 +12,7 @@ protoPayload.methodName:"compute.firewalls"
 ```
 # Function dependencies, for example:
 # package>=version
-request
+requests
 ```
 ```py
 import base64
