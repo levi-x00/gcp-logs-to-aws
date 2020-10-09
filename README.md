@@ -14,7 +14,7 @@ protoPayload.methodName:"compute.firewalls"
 # package>=version
 requests
 ```
-```
+```py
 import base64
 import os
 import requests
@@ -37,7 +37,7 @@ def hello_pubsub(event, context):
         print("no response in 'protoPayload'")
 ```
 3. Create lambda function with this code
-```
+```py
 import json
 
 def lambda_handler(event, context):
