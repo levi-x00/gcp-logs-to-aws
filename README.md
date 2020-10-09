@@ -41,12 +41,11 @@ def hello_pubsub(event, context):
 import json
 
 def lambda_handler(event, context):
-    
-	print(json.dumps(event))
-	return {
-		'statusCode': 200,
-		'body': json.dumps('logs printed!')
-	}
+    print(json.dumps(event))
+    return {
+        'statusCode': 200,
+        'body': json.dumps('logs printed!')
+    }
 ```
 4. Create API Gateway with POST method, name the resource, deploy it.
 5. Create a firewall rule in GCP, then try to edit the rules to generate some events.
